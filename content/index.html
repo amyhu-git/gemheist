@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>💎GemHeist</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/picnic">
+</head>
+
+<body>
+    <h1> 💎 GemHeist 💎</h1>
+    <p>
+        <section id="public">
+            <div id="public_msg"></div>
+			<h5 id="player-record"></h5>
+        </section>
+    </p>
+
+    <section id="game_interface">
+        <!-- row1 -->
+        <div class="grid-container" id="grid-container1">
+        </div>
+        <!-- row2 -->
+        <div class="grid-container" id="grid-container2">
+        </div>
+        <!-- row3 -->
+        <div class="grid-container" id="grid-container3">
+        </div>
+        <!-- row4 -->
+        <div class="grid-container" id="grid-container4">
+        </div>
+        <!-- row5 -->
+        <div class="grid-container" id="grid-container5">
+        </div>
+        <!-- row6 -->
+        <div class="grid-container" id="grid-container6">
+        </div>
+        <!-- row7 -->
+        <div class="grid-container" id="grid-container7">
+        </div>
+		<!-- row8 -->
+		<div class="grid-container" id="grid-container8">
+		</div>
+		<!-- row9 -->
+		<div class="grid-container" id="grid-container9">
+		</div>
+		<!-- row10 -->
+		<div class="grid-container" id="grid-container10">
+		</div>
+		<!-- row11 -->
+		<div class="grid-container" id="grid-container11">
+		</div>
+		
+        <button id='quit-btn' onClick="quitgame()">Quit Game</button>
+        <p id='showscore'></p>
+        <p id='showopscore'></p>
+        <p id='waitstatus'></p>
+    </section>
+
+    <section id="login">
+        <title>Login</title>
+        <div><label>Username: </label><input type="text" id="username"></div>
+        <div><label>Password:</label><input type="password" id="pass"></div>
+        <button id="login_button">Login</button>
+        <button id="register_button" onClick="addUser()">Register</button>
+    </section>
+
+    <section id="private">
+        <p id="private_msg">
+            <p>
+                <button Style="float:right" id="logout_button">Logout</button>
+                <br>
+                <div class="game_select">
+                    <label>Number of Players:</label>
+                    <select id="player_select">
+                    <option value="0">2</option>
+					</select><br>
+					
+                    <label>Grid Height</label>
+                    <select id="grid-height">
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+					</select><br>
+					
+                    <label>Grid Width</label>
+                    <select id="grid-width">
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+                </select>
+                    <br>
+                    <button id="start_button" onClick="start()">Start New Game</button>
+                </div>
+            </p>
+            <br>
+            <p class="card">
+                <header>
+                    <h3> Most Recent Games</h3>
+                    <h5> Join or Replay: </h5>
+                </header>
+                <div id='joinreplay'>
+                </div>
+            </p>
+        </p>
+    </section>
+    <script src=client.js></script>
+
+</body>
+
+</html>

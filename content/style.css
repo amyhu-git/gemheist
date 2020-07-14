@@ -1,0 +1,79 @@
+h1 {
+    text-align: center;
+}
+
+button {
+    background: #85144b;
+}
+
+#login,
+#private {
+    width: 50%;
+    margin: 0 auto
+}
+
+#public {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#private_msg {
+    font-size: xx-large;
+    text-align: center;
+}
+
+#player-record {
+    text-align: center;
+}
+
+#game_interface {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.grid-container {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+#quit-btn {
+    background: #B0B0B0;
+}
+
+#login_button,
+#register_button {
+    background: #4290cf;
+}
+
+#start_button {
+    background: #4290cf;
+    font-size: 1.5em;
+}
+
+#logout_button {
+    font-size: .75em;
+    background: #B0B0B0;
+}
+
+button {
+    background: #4290cf;
+}
+
+.image {
+    width: 60px;
+    height: 60px;
+    display: block;
+}
+
+.bar {
+    border: 1px solid transparent;
+    border-radius: 30px;
+    background-color: #77c6e6e5;
+}
+
+#game_interface {
+    display: none;
+    width: -moz-max-content;
+}
