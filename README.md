@@ -1,4 +1,4 @@
-# CS5003 Practical2: GemHeist
+# CS5003 Practical2: GemHeist - Pair Programming Project 
 This is our repository for CS5003 practical 2 implementing a double-player game called GemHeist.<br>
 The file with a name 'server' contains the code of the server side.<br>
 The file "package.json" tells what packages are needed.<br>
@@ -23,8 +23,7 @@ Follow the steps below to run the server:<br>
 * Open the Terminal or Powershell
 * Locate the folder
 * Type "node server.js"
-* Open Chrome browser and type "localhost:3000" in the address bar
-* Click "enter" on your keyboard
+* Open a browser and type "localhost:3000" in the address bar
 * Open the second page and type "localhost:3000" in the address bar
 * Now you can start to play a double-player game
 
